@@ -1,0 +1,16 @@
+opencti:
+  url: 'http://localhost:8080'
+  token: 'ChangeMe'
+
+connector:
+  id: 'ChangeMe'
+  type: 'INTERNAL_ENRICHMENT'
+  name: 'Template'
+  scope: 'StixFile,Artifact'
+  auto: true # Enable/disable auto-enrichment of observables
+  confidence_level: 50 # From 0 (Unknown) to 100 (Fully trusted)
+  log_level: 'info'
+
+template:
+  TEMPLATE_SERVICE_VARIABLE_1: 'ChangeMeNumber1'
+  TEMPLATE_SERVICE_VARIABLE_2: 'ChangeMeNumber2'
