@@ -3,7 +3,7 @@ name: Docker Image Build
 on:
   push:
     branches:
-      - 'development'
+      - 'production'
 
 jobs:
 
@@ -17,6 +17,3 @@ jobs:
       run: docker build . --file Dockerfile --tag opencti-connector-template:$(date +%s)
     - name: Create GitHub Release
       uses: pipe-cd/actions-gh-release@v2.3.4
-      with:
-        release_file: '**/DEVELOPMENT'
-        token: ${{ secrets.GITHUB_TOKEN }}
