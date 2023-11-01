@@ -1,0 +1,2 @@
+pycti==5.11.12
+# requests

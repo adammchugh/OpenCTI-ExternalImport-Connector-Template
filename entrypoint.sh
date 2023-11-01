@@ -1,7 +1,4 @@
 #!/bin/sh
 
-# Go to the right directory
-cd /opt/opencti-connector-template
-
-# Launch the worker
+# Start the connector (WORKDIR is /opt/connector as set in the Dockerfile)
 python3 main.py
